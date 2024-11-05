@@ -5,18 +5,26 @@ public class Main {
         String username = "abc";
         String password = "xyz";
         Login login = new Login();
+        login.setPassword(password);
+        login.setUsername(username);
+        login.login();
     }
 }
 
 class Login {
-    private final String username = "abc";
-    private final String password = "xyz";
+    private String password = "xyz";
+    private String username = "abc";
 
-    public String getPassword() {
-        return password;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
-    public String getUsername() {
-        return username;
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void login() {
+        password = password + "_";
+        System.out.println(username + " logged in");
     }
 }
