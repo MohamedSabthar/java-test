@@ -1,12 +1,12 @@
 package org.example;
 
 public class Main {
-    private static final String pwd = "mySecretPassword123";  // DON'T DO THIS
+    private static final String password = "mySecretPassword123";  // DON'T DO THIS
 
     public static void main(String[] args) {
         String username = "abc";
         Login login = new Login();
-        login.setPassword(pwd);
+        login.setPassword(password);
         login.setUsername(username);
         login.login();
     }
