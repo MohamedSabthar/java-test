@@ -1,11 +1,12 @@
 package org.example;
 
 public class Main {
+    private static final String DB_PASSWORD = "mySecretPassword123";  // DON'T DO THIS
+
     public static void main(String[] args) {
         String username = "abc";
-        String password = "xyz";
         Login login = new Login();
-        login.setPassword(password);
+        login.setPassword(DB_PASSWORD);
         login.setUsername(username);
         login.login();
     }
